@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: 'Press Start 2P', cursive;
+  font-family: "Press Start 2P", cursive;
 }
 
 html {
@@ -14,4 +14,25 @@ body {
   align-items: center;
 }
 
-/* your CSS below! */
+td {
+  background-color: rgb(199, 195, 195);
+  height: 100px;
+  width: 100px;
+}
+
+/* classes for colors*/
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.black {
+  background-color: black;
+}
+
+.purple {
+  background-color: purple;
+}
