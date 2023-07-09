@@ -5,7 +5,7 @@ let boxMatrix = document.getElementsByTagName("td");
 document.getElementById("add-row").addEventListener("click", addRow);
 function addRow() {
   const newRow = document.createElement("tr");
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 100; i++) {
     const newBox = document.createElement("td");
     newRow.appendChild(newBox);
   }

@@ -1,18 +1,27 @@
-# Pixelate 
+# Pixelate
 
-## Instructions
+[Click here](https://tajpuriya27.github.io/pixelate/) to view the live hosted page; hosted on GitHub pages.
 
-An editor for your 8-bit art!
+## Instruction to users:
 
-To get started:
+Draw yourself a picture.
 
-* `npm install`
-* `npm start`
+- Add as much row as you want in your canvas.
+- Choose color
+- Click on the box you want to paint.
 
-This will start a small http server, which will serve up the index.html file, as well as any "static resources" (that is, CSS and JS files, as well as fonts) that the index.html requests (via `link` and `script` tags). You can view the page by opening `http://localhost:8080/` in your browser!
+## For developers
 
-You can add your own CSS to `style.css`, and JavaScript to `script.js`! For further instruction, refer to the workshop. Have fun!
+### pixelate v1.0
 
-## A Note on These Instructions
+- Added click, eventListener for paint functionality to each td element of table using loops.
 
-If you are in a program that has not yet used `npm` or `node` for a workshop yet, opening `index.html` in your VSCode editor (or editor of your choice) and simply working on the files should work perfectly well.
+### pixelate v1.1
+
+- Added click, eventListener for paint functionality to table and check event.target.tagName to be `TD` to paint.
+
+### Further Enhancement _(Priority Wise)_
+
+1. Handle click and hover functionality to paint in each box.
+2. Handle the pointer event of touch.
+3. Make the site resonpsive.
