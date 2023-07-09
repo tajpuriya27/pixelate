@@ -12,6 +12,9 @@ function addRow() {
   myTable.appendChild(newRow);
   for (let i = 0; i < boxMatrix.length; i++) {
     boxMatrix[i].addEventListener("click", clickFun);
+    // adding for hover functionality
+    boxMatrix[i].addEventListener("mousedown", mouseDownFun);
+    boxMatrix[i].addEventListener("mouseup", mouseUpFun);
   }
 }
 
@@ -23,11 +26,29 @@ function optFun(e) {
   choosenColor = e.target.value;
 }
 
+// handling click
 function clickFun(e) {
   if (e.target.classList.contains(choosenColor)) {
     e.target.classList.remove(choosenColor);
   } else {
     e.target.removeAttribute("class");
     e.target.classList.add(choosenColor);
+  }
+}
+
+// Hover functionality
+function mouseDownFun(e) {
+  for (let i = 0; i < boxMatrix.length; i++) {
+    boxMatrix[i].addEventListener("mouseover", mouseOverFun);
+  }
+}
+
+function mouseOverFun(e) {
+  clickFun(e);
+}
+
+function mouseUpFun(e) {
+  for (let i = 0; i < boxMatrix.length; i++) {
+    boxMatrix[i].removeEventListener("mouseover", mouseOverFun);
   }
 }
